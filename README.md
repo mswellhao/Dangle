@@ -16,7 +16,7 @@ A Transformer extension with adaptive encoding that delivers more disentangled r
 }
 ```
 
-###Requirements and Installation
+### Requirements and Installation
 ``` bash
 conda create -n dangle python=3.7
 
