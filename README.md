@@ -4,7 +4,7 @@
  - **Dangle**: A new family of architectures with specialized encoding that deliver more disentangled representations and better compositional generalization than Transoformer. The implementation is based on [fairseq](https://github.com/pytorch/fairseq/tree/v0.9.0)
 
 
-- **ReaCT**: A new real-world machine translation [benchmark](https://github.com/mswellhao/Dangle/ReaCT) for compositional generalization.
+- **ReaCT**: A new real-world machine translation [benchmark](ReaCT_data) for compositional generalization.
 
 ### Reference:
 [Disentangled Sequence to Sequence Learning for Compositional Generalization](https://arxiv.org/abs/2110.04655) ACL 2022
