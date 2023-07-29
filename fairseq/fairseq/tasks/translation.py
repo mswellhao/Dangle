@@ -211,6 +211,10 @@ class TranslationTask(FairseqTask):
         parser.add_argument('--eval-cognition', action='store_true',
                             help='evalute with cognition')
 
+        #split batch into subbatches
+        parser.add_argument('--split-num', default=2, type=int,
+                            help='maximum number of reencoding')
+
     def __init__(self, args, src_dict, tgt_dict):
         super().__init__(args)
         self.src_dict = src_dict

@@ -417,6 +417,9 @@ class MultiheadAttentionWithRelPos(nn.Module):
                 attn_weights = attn_weights.transpose(0, 2)
             attn_weights = attn_weights.view(bsz * self.num_heads, tgt_len, src_len)
 
+        #set weights to 0 if all items equal to -inf
+        attn_weights[(attn_weights != float('-inf')).sum(dim=-1) == 0] = 0
+
         if before_softmax:
             return attn_weights, v
 
